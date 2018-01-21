@@ -1,0 +1,62 @@
+.site-header {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: $yellow;
+
+  @mixin atSmall {
+    padding-top: 60px;
+    padding-bottom: 58px;
+  }
+
+  &__logo {
+    @mixin atSmall {
+      float: left;
+    }
+
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  &__nav {
+    @mixin atSmall {
+      float: right;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding-left: 0;
+      text-align: center;
+      list-style-type: none;
+      font-size: 0;
+
+      @mixin atSmall {
+        margin-top: 0;
+      }
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 10px;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      @mixin atMedium {
+        margin-left: 58px;
+      }
+    }
+  }
+}

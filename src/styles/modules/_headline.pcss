@@ -1,0 +1,50 @@
+.headline {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+
+  &--small {
+    max-width: 738px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &-subscribe-margin {
+      margin-bottom: 42px;
+    }
+  }
+
+  &--yellow {
+    color: $yellow;
+  }
+
+  &--grey {
+    color: $grey;
+  }
+
+  &--left {
+    @mixin atMedium {
+      text-align: left;
+    }
+  }
+
+  &--shrinked {
+    max-width: 309px
+  }
+
+  &--no-center {
+    @mixin atMedium {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &--smaller-b-margin {
+    margin-bottom: 22px;
+  }
+}
+
